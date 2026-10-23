@@ -79,11 +79,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 
 .hero {
   position: relative;
-  width: var(--content-width);
-  max-width: var(--content-max-width);
-  min-height: 490px;
-  max-height: 820px;
-  aspect-ratio: 1.84;
+  width: 100%;
+  height: calc(100vh - 168px);
+  height: calc(100svh - 168px);
+  min-height: 0;
   margin: 25px auto 0;
   overflow: hidden;
   background-color: #f3f3f0;
@@ -128,7 +127,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
   margin: 0;
   color: #050505;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", "Franklin Gothic Condensed", sans-serif;
-  font-size: clamp(80px, 18.5vw, 310px);
+  font-size: clamp(80px, min(18.5vw, 34svh), 310px);
   font-weight: 900;
   line-height: .76;
   letter-spacing: .015em;
@@ -160,10 +159,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 .hero-bottom-right { right: 3%; bottom: 2.5%; display: flex; align-items: center; gap: 6px; font-size: 6px; letter-spacing: .12em; animation: bottom-in .7s .65s both; }
 .hero-bottom-right span { font-size: 12px; }
 
-.format-strip { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: clamp(10px, 2.2vw, 30px); width: var(--content-width); max-width: var(--content-max-width); min-height: 55px; margin: 0 auto; border-bottom: 1px solid var(--rule); color: #333; font-size: 8px; font-weight: 700; letter-spacing: .15em; }
+.format-strip { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: clamp(10px, 2.2vw, 30px); width: 100%; min-height: 55px; margin: 0 auto; padding: 0 5vw; border-bottom: 1px solid var(--rule); color: #333; font-size: 8px; font-weight: 700; letter-spacing: .15em; }
 .format-strip i { color: #777; font-size: 10px; font-style: normal; }
-.portfolio-transition { width: var(--content-width); max-width: var(--content-max-width); margin: clamp(24px, 4vw, 56px) auto; }
-.portfolio-transition img { display: block; width: 100%; height: auto; }
+.portfolio-transition { position: relative; width: 100%; max-width: none; margin: 0; overflow: hidden; background: #efefec; line-height: 0; }
+.portfolio-transition img { display: block; width: 100%; height: auto; margin: 0; }
 
 .work-section { width: var(--content-width); max-width: var(--content-max-width); margin: 0 auto; padding: 100px 0; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 28px; margin-bottom: 36px; }
@@ -387,7 +386,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
   .site-header { min-height: 64px; padding: 16px 5vw; }
   .site-header nav { gap: 0; font-size: clamp(6px, 1vw, 8px); }
   .site-header nav a { padding: 8px clamp(6px, 1vw, 9px); }
-  .hero { width: var(--content-width); min-height: 570px; max-height: none; aspect-ratio: .88; margin-top: 14px; }
+  .hero { height: calc(100vh - 148px); height: calc(100svh - 148px); min-height: 0; margin-top: 14px; }
   .hero-label { top: 5%; }
   .hero-label-left { left: 5%; }
   .hero-label-right { right: 5%; }
@@ -395,7 +394,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
   .hero-portrait { --portrait-compensation: 1.22; height: 1.75em; max-width: 1.35em; }
   .hero-symbols { bottom: 4.5%; }
   .hero-bottom-left, .hero-bottom-right { bottom: 2.5%; font-size: 5px; }
-  .format-strip { width: var(--content-width); min-height: 48px; gap: 8px 13px; font-size: 6px; }
+  .format-strip { min-height: 48px; gap: 8px 13px; font-size: 6px; }
   .format-strip i { font-size: 8px; }
   .work-section { width: var(--content-width); padding: 75px 0; }
   .about-section { width: 100%; padding: 0; }
@@ -449,7 +448,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 
 @media (max-width: 390px) {
   .wordmark-name { font-size: 8px; }
-  .hero { min-height: 510px; }
+  .hero { min-height: 0; }
   .hero h1 { font-size: clamp(30px, 15vw, 60px); }
   .hero-bottom-left, .hero-bottom-right { letter-spacing: .08em; }
   .section-note { display: none; }
