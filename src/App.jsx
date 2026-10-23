@@ -39,7 +39,6 @@ function App() {
       </header>
 
       <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-grid" aria-hidden="true" />
         <div className="hero-label hero-label-left">VIDEO EDITOR</div>
         <div className="hero-label hero-label-right">2026</div>
         <h1 id="hero-title" aria-label="Portfolio">
