@@ -55,31 +55,63 @@ function App() {
       </div>
 
       <section className="about-section" id="about" aria-labelledby="about-title">
-        <div className="about-topline">
-          <p className="eyebrow">01 — ABOUT</p>
-          <span className="about-symbol" aria-hidden="true">♣ ♦</span>
-        </div>
-        <h2 className="visually-hidden" id="about-title">About me</h2>
-        <div className="about-marquee" aria-hidden="true">
-          <div className="about-marquee-track">
-            {[0, 1].map((copy) => (
-              <div className="about-marquee-set" key={copy}>
-                {[0, 1, 2].map((item) => (
-                  <span className="about-marquee-item" key={item}>
-                    <span>ABOUT ME</span><i>♣</i><i className="marquee-diamond">♦</i>
-                  </span>
-                ))}
+        <div className="about-layout">
+          <figure className="about-portrait">
+            <div className="portrait-frame">
+              <img
+                className="about-portrait-image"
+                src="/images/portfolio-portrait.png"
+                alt="Black and white illustrated portrait"
+              />
+              <span className="portrait-serial">AT / 01</span>
+              <span className="crop-handle crop-top-left" aria-hidden="true" />
+              <span className="crop-handle crop-top-center" aria-hidden="true" />
+              <span className="crop-handle crop-top-right" aria-hidden="true" />
+              <span className="crop-handle crop-middle-left" aria-hidden="true" />
+              <span className="crop-handle crop-middle-right" aria-hidden="true" />
+              <span className="crop-handle crop-bottom-left" aria-hidden="true" />
+              <span className="crop-handle crop-bottom-center" aria-hidden="true" />
+              <span className="crop-handle crop-bottom-right" aria-hidden="true" />
+            </div>
+            <figcaption><span>AVNEESH TRIPATHI</span><span>VIDEO EDITOR · 2026</span></figcaption>
+          </figure>
+
+          <div className="about-main-column">
+            <div className="about-intro">
+              <p className="eyebrow">01 — ABOUT ME</p>
+              <h2 id="about-title">HELLO</h2>
+              <h3>Hi, I’m Avneesh Tripathi.</h3>
+              <p>Great editing is more than smooth transitions and visual effects. It’s about capturing attention, keeping viewers engaged, and delivering a message people remember.</p>
+              <p>I create cinematic video edits and motion design for brands, creators, and businesses, with a focus on clear storytelling and purposeful pacing.</p>
+            </div>
+            <div className="about-approach">
+              <h3>MY APPROACH</h3>
+              <p>Every cut should move the story forward. I shape each edit around its audience, message, and platform.</p>
+            </div>
+          </div>
+
+          <aside className="about-sidebar">
+            <section className="skills-block" aria-labelledby="skills-title">
+              <h3 id="skills-title">SKILLS</h3>
+              <div className="skill-grid">
+                <div className="skill-tile skill-premiere">
+                  <span className="skill-app-mark">Pr</span>
+                  <span className="skill-app-name">PREMIERE PRO</span>
+                </div>
+                <div className="skill-tile skill-after-effects">
+                  <span className="skill-app-mark">Ae</span>
+                  <span className="skill-app-name">AFTER EFFECTS</span>
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
-        <div className="about-copy">
-          <h3>Thoughtful edits.<br />Clear storytelling.</h3>
-          <div className="about-details">
-            <p>I’m Avneesh Tripathi, a video editor working across real estate, talking-head, short-form, and long-form content. I focus on clear storytelling, thoughtful pacing, and edits tailored to each project.</p>
-            <div className="tools-line"><span>TOOLS</span><p>Adobe Premiere Pro <i>✳</i> Adobe After Effects</p></div>
+            </section>
+            <section className="experience-block" aria-labelledby="experience-title">
+              <h3 id="experience-title">EXPERIENCE</h3>
+              <p className="experience-date">VIDEO EDITOR</p>
+              <p className="experience-role">Cinematic edits & motion design</p>
+              <p className="experience-copy">Real estate · Talking head · Short form · Long form</p>
+            </section>
             <a className="text-link" href="https://wa.me/917355167784" target="_blank" rel="noreferrer">LET’S WORK TOGETHER <span aria-hidden="true">↗</span></a>
-          </div>
+          </aside>
         </div>
       </section>
 
