@@ -5,3 +5,4 @@ dist/
 *.local
 .env
 /public/videos/trial-raw-j32-11.mp4
+.vercel

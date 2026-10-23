@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
 const categories = [
-  { title: 'Real Estate', type: 'PROPERTY FILMS', tone: 'amber', posterSrc: '/images/real-estate.svg' },
-  { title: 'Talking Head', type: 'INTERVIEWS & CREATOR CONTENT', tone: 'blue', posterSrc: '/images/talking-head.svg' },
-  { title: 'Short Form', type: 'REELS & SOCIAL', tone: 'rose', posterSrc: '/images/short-form.svg' },
-  { title: 'Long Form', type: 'YOUTUBE & STORIES', tone: 'olive', posterSrc: '/images/long-form.svg' },
+  { title: 'Real Estate', type: 'PROPERTY FILMS', posterSrc: '/images/real-estate.svg' },
+  { title: 'Talking Head', type: 'INTERVIEWS & CREATOR CONTENT', posterSrc: '/images/talking-head.svg' },
+  { title: 'Short Form', type: 'REELS & SOCIAL', posterSrc: '/images/short-form.svg' },
+  { title: 'Long Form', type: 'YOUTUBE & STORIES', posterSrc: '/images/long-form.svg' },
 ]
 
 const videos = [
@@ -16,45 +16,51 @@ function App() {
   const [openCategories, setOpenCategories] = useState({})
 
   return (
-    <main className="min-h-screen bg-[#10110f] text-[#f2f0e9]">
+    <main className="portfolio" id="top">
       <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Home">
-          AVNEESH TRIPATHI
+        <a className="wordmark" href="#top" aria-label="Avneesh Tripathi home">
+          <span className="wordmark-name">AVNEESH TRIPATHI<small>VIDEO EDITOR</small></span>
         </a>
         <nav aria-label="Main navigation">
-          <a href="#work">Selected work</a>
+          <a href="#work">Work</a>
           <a href="#about">About</a>
-          <a className="contact-link" href="https://wa.me/917355167784" target="_blank" rel="noreferrer">
-            Get in touch <span aria-hidden="true">↗</span>
-          </a>
+          <a className="contact-link" href="https://wa.me/917355167784" target="_blank" rel="noreferrer">Contact <span aria-hidden="true">↗</span></a>
         </nav>
       </header>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow"><span className="status-dot" /> AVAILABLE FOR SELECT PROJECTS</p>
-          <h1>Stories shaped<br /><em>with purpose.</em></h1>
-          <div className="hero-foot">
-            <p>Video editor creating polished, engaging content for brands, creators, and businesses.</p>
-            <a href="#work" className="scroll-link">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
-          </div>
+      <section className="hero" aria-labelledby="hero-title">
+        <div className="hero-grid" aria-hidden="true" />
+        <div className="hero-label hero-label-left">VIDEO EDITOR</div>
+        <div className="hero-label hero-label-right">2026</div>
+        <h1 id="hero-title">PORTFOLIO</h1>
+        <img
+          className="hero-portrait"
+          src="/images/portfolio-portrait.png"
+          alt="Original anonymous line-art portrait illustration"
+        />
+        <div className="hero-symbols" aria-hidden="true">
+          <span className="symbol-burst">✹</span>
+          <span className="symbol-diamond">✦</span>
+          <span className="symbol-flower">✿</span>
         </div>
-        <div className="hero-art" aria-label="Abstract cinematic still placeholder" role="img">
-          <div className="art-sun" />
-          <div className="art-horizon" />
-          <span className="art-caption">FRAME 001 — YOUR STORY STARTS HERE</span>
-          <span className="art-index">01 / 03</span>
-        </div>
-        <span className="hero-side-note">CUT WITH INTENTION · BASED ANYWHERE</span>
+        <div className="hero-bottom-left">AVNEESH TRIPATHI</div>
+        <a className="hero-bottom-right" href="#work">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
       </section>
+
+      <div className="format-strip" aria-label="Editing formats">
+        <span>REAL ESTATE</span><i aria-hidden="true">✳</i>
+        <span>TALKING HEAD</span><i aria-hidden="true">✳</i>
+        <span>SHORT FORM</span><i aria-hidden="true">✳</i>
+        <span>LONG FORM</span>
+      </div>
 
       <section className="work-section" id="work">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">FOUR FORMATS, ONE EDITORIAL EYE</p>
-            <h2>Work by category<span className="accent">.</span></h2>
+            <p className="eyebrow">01 — SELECTED PROJECTS</p>
+            <h2>Work by category</h2>
           </div>
-          <p className="section-note">A selection of stories, shaped<br />one frame at a time.</p>
+          <p className="section-note">Open a category<br />to view the edits.</p>
         </div>
 
         <div className="category-groups">
@@ -64,32 +70,31 @@ function App() {
             const contentId = `category-content-${index}`
 
             return (
-              <section className="category-group" key={category.title}>
-                <div className="category-heading">
-                  <button
-                    className="category-toggle"
-                    type="button"
-                    aria-expanded={isOpen}
-                    aria-controls={contentId}
-                    onClick={() => setOpenCategories((current) => ({
-                      ...current,
-                      [category.title]: !current[category.title],
-                    }))}
-                  >
-                    <span className="category-label">
-                      <span className="category-title">{category.title}</span>
-                      <span className="category-type">{category.type}</span>
-                    </span>
-                    <span className="category-action">
-                      <span>{categoryVideos.length} {categoryVideos.length === 1 ? 'VIDEO' : 'VIDEOS'}</span>
-                      <span className={`category-chevron${isOpen ? ' is-open' : ''}`} aria-hidden="true">⌄</span>
-                    </span>
-                  </button>
-                </div>
+              <section className={`category-group${isOpen ? ' is-open' : ''}`} key={category.title}>
+                <button
+                  className="category-toggle"
+                  type="button"
+                  aria-expanded={isOpen}
+                  aria-controls={contentId}
+                  onClick={() => setOpenCategories((current) => ({
+                    ...current,
+                    [category.title]: !current[category.title],
+                  }))}
+                >
+                  <span className="category-number">0{index + 1}</span>
+                  <span className="category-label">
+                    <span className="category-title">{category.title}</span>
+                    <span className="category-type">{category.type}</span>
+                  </span>
+                  <span className="category-action">
+                    <span>{categoryVideos.length} {categoryVideos.length === 1 ? 'VIDEO' : 'VIDEOS'}</span>
+                    <span className={`category-chevron${isOpen ? ' is-open' : ''}`} aria-hidden="true">+</span>
+                  </span>
+                </button>
                 <div className="project-grid" id={contentId} hidden={!isOpen}>
-                  {isOpen && categoryVideos.map((video) => (
+                  {isOpen && categoryVideos.map((video, videoIndex) => (
                     <article className="project-card" key={video.id}>
-                      <div className={`project-art ${category.tone}`}>
+                      <div className="project-art">
                         {video.youtubeId ? (
                           <iframe
                             className="project-video"
@@ -113,11 +118,13 @@ function App() {
                         )}
                       </div>
                       <div className="project-meta">
-                        <h4>{video.title}</h4>
-                        <span>EDITED VIDEO</span>
+                        <span>0{videoIndex + 1}</span>
+                        <h3>{video.title}</h3>
+                        <span>VIDEO EDITING</span>
                       </div>
                     </article>
                   ))}
+                  {categoryVideos.length === 0 && <p className="empty-category">New work in this format is coming soon.</p>}
                 </div>
               </section>
             )
@@ -126,20 +133,26 @@ function App() {
       </section>
 
       <section className="about-section" id="about">
-        <p className="eyebrow">A LITTLE ABOUT ME</p>
-        <div className="about-copy">
-          <h2>Thoughtful edits.<br />Clear storytelling.</h2>
+        <div className="section-heading">
           <div>
+            <p className="eyebrow">02 — ABOUT</p>
+            <h2>About me</h2>
+          </div>
+          <span className="about-symbol" aria-hidden="true">✳</span>
+        </div>
+        <div className="about-copy">
+          <h3>Thoughtful edits.<br />Clear storytelling.</h3>
+          <div className="about-details">
             <p>I’m Avneesh Tripathi, a video editor working across real estate, talking-head, short-form, and long-form content. I focus on clear storytelling, thoughtful pacing, and edits tailored to each project.</p>
-            <p className="tools-line"><span>TOOLS</span>Adobe Premiere Pro · Adobe After Effects</p>
-            <a className="text-link" href="https://wa.me/917355167784" target="_blank" rel="noreferrer">LET’S MAKE SOMETHING <span aria-hidden="true">↗</span></a>
+            <div className="tools-line"><span>TOOLS</span><p>Adobe Premiere Pro <i>✳</i> Adobe After Effects</p></div>
+            <a className="text-link" href="https://wa.me/917355167784" target="_blank" rel="noreferrer">LET’S WORK TOGETHER <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
 
       <footer className="site-footer">
-        <a className="wordmark" href="#top">AVNEESH TRIPATHI</a>
-        <p>© {new Date().getFullYear()} · AVNEESH TRIPATHI</p>
+        <a className="footer-mark" href="#top">AVNEESH TRIPATHI</a>
+        <p>© {new Date().getFullYear()} · VIDEO EDITOR</p>
         <div className="footer-contact">
           <a href="mailto:tavneesh04@gmail.com">TAVNEESH04@GMAIL.COM <span aria-hidden="true">↗</span></a>
           <a href="tel:+917355167784">+91 73551 67784 <span aria-hidden="true">↗</span></a>
