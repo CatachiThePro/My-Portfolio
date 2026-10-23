@@ -54,10 +54,39 @@ function App() {
         <span>LONG FORM</span>
       </div>
 
+      <section className="about-section" id="about" aria-labelledby="about-title">
+        <div className="about-topline">
+          <p className="eyebrow">01 — ABOUT</p>
+          <span className="about-symbol" aria-hidden="true">♣ ♦</span>
+        </div>
+        <h2 className="visually-hidden" id="about-title">About me</h2>
+        <div className="about-marquee" aria-hidden="true">
+          <div className="about-marquee-track">
+            {[0, 1].map((copy) => (
+              <div className="about-marquee-set" key={copy}>
+                {[0, 1, 2].map((item) => (
+                  <span className="about-marquee-item" key={item}>
+                    <span>ABOUT ME</span><i>♣</i><i className="marquee-diamond">♦</i>
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="about-copy">
+          <h3>Thoughtful edits.<br />Clear storytelling.</h3>
+          <div className="about-details">
+            <p>I’m Avneesh Tripathi, a video editor working across real estate, talking-head, short-form, and long-form content. I focus on clear storytelling, thoughtful pacing, and edits tailored to each project.</p>
+            <div className="tools-line"><span>TOOLS</span><p>Adobe Premiere Pro <i>✳</i> Adobe After Effects</p></div>
+            <a className="text-link" href="https://wa.me/917355167784" target="_blank" rel="noreferrer">LET’S WORK TOGETHER <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
       <section className="work-section" id="work">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">01 — SELECTED PROJECTS</p>
+            <p className="eyebrow">02 — SELECTED PROJECTS</p>
             <h2>Work by category</h2>
           </div>
           <p className="section-note">Open a category<br />to view the edits.</p>
@@ -129,24 +158,6 @@ function App() {
               </section>
             )
           })}
-        </div>
-      </section>
-
-      <section className="about-section" id="about">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">02 — ABOUT</p>
-            <h2>About me</h2>
-          </div>
-          <span className="about-symbol" aria-hidden="true">✳</span>
-        </div>
-        <div className="about-copy">
-          <h3>Thoughtful edits.<br />Clear storytelling.</h3>
-          <div className="about-details">
-            <p>I’m Avneesh Tripathi, a video editor working across real estate, talking-head, short-form, and long-form content. I focus on clear storytelling, thoughtful pacing, and edits tailored to each project.</p>
-            <div className="tools-line"><span>TOOLS</span><p>Adobe Premiere Pro <i>✳</i> Adobe After Effects</p></div>
-            <a className="text-link" href="https://wa.me/917355167784" target="_blank" rel="noreferrer">LET’S WORK TOGETHER <span aria-hidden="true">↗</span></a>
-          </div>
         </div>
       </section>
 
