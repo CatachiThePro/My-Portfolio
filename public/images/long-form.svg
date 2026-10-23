@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 857">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#24251d"/><stop offset="1" stop-color="#11130f"/></linearGradient><linearGradient id="frame" x2="0" y2="1"><stop stop-color="#b8bd83" stop-opacity=".17"/><stop offset="1" stop-color="#b8bd83" stop-opacity=".025"/></linearGradient></defs>
+  <rect width="1200" height="857" fill="url(#bg)"/>
+  <text x="72" y="78" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="4">AVNEESH TRIPATHI</text>
+  <text x="1128" y="78" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" text-anchor="end">VIDEO EDITOR</text>
+  <path d="M72 116H1128" stroke="#fff" stroke-opacity=".2"/><path d="M72 117H238" stroke="#b8bd83" stroke-width="2"/>
+  <text x="72" y="250" fill="#b8bd83" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="4">04  /  EXTENDED STORIES</text>
+  <text x="68" y="385" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="600" letter-spacing="-5">LONG</text>
+  <text x="68" y="482" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="600" letter-spacing="-5">FORM</text>
+  <path d="M72 525H395" stroke="#b8bd83" stroke-width="3"/>
+  <text x="72" y="570" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3">RHYTHM  /  DEPTH  /  DETAIL</text>
+  <g transform="translate(690 274)">
+    <rect width="422" height="265" rx="8" fill="url(#frame)" stroke="#b8bd83" stroke-opacity=".45"/>
+    <path d="M24 206 112 105 181 169 250 68 398 206Z" fill="#b8bd83" fill-opacity=".17" stroke="#b8bd83" stroke-opacity=".45"/>
+    <circle cx="326" cy="72" r="25" fill="#b8bd83" fill-opacity=".7"/>
+    <path d="M0 295H422M0 320H422M0 345H422M0 370H422" stroke="#b8bd83" stroke-opacity=".28"/>
+    <path d="M0 294v84m24-84v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42m24-42v42" stroke="#b8bd83" stroke-opacity=".27"/>
+    <rect x="157" y="286" width="7" height="94" fill="#d6fb6e"/>
+  </g>
+  <text x="72" y="790" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3">SELECTED WORK</text>
+  <text x="1128" y="790" fill="#b8bd83" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" text-anchor="end">04 / 04</text>
+</svg>

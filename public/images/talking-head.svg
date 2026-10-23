@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 857">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#1d2429"/><stop offset="1" stop-color="#11130f"/></linearGradient><radialGradient id="halo"><stop stop-color="#a8c2d0" stop-opacity=".19"/><stop offset="1" stop-color="#a8c2d0" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="857" fill="url(#bg)"/><circle cx="925" cy="480" r="330" fill="url(#halo)"/>
+  <text x="72" y="78" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="4">AVNEESH TRIPATHI</text>
+  <text x="1128" y="78" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" text-anchor="end">VIDEO EDITOR</text>
+  <path d="M72 116H1128" stroke="#fff" stroke-opacity=".2"/><path d="M72 117H238" stroke="#a8c2d0" stroke-width="2"/>
+  <text x="72" y="250" fill="#a8c2d0" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="4">02  /  INTERVIEWS</text>
+  <text x="68" y="385" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="91" font-weight="600" letter-spacing="-5">TALKING</text>
+  <text x="68" y="482" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="600" letter-spacing="-5">HEAD</text>
+  <path d="M72 525H395" stroke="#a8c2d0" stroke-width="3"/>
+  <text x="72" y="570" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3">VOICE  /  PRESENCE  /  STORY</text>
+  <circle cx="920" cy="465" r="184" fill="#a8c2d0" fill-opacity=".035" stroke="#a8c2d0" stroke-opacity=".2"/>
+  <circle cx="920" cy="465" r="145" fill="none" stroke="#a8c2d0" stroke-opacity=".4" stroke-width="2"/>
+  <circle cx="920" cy="465" r="106" fill="none" stroke="#a8c2d0" stroke-opacity=".65" stroke-width="2"/>
+  <path d="M920 280V338M920 592V650M735 465H793M1047 465H1105M790 335 831 376M1009 554 1050 595M1050 335 1009 376M831 554 790 595" stroke="#a8c2d0" stroke-opacity=".75" stroke-width="3"/>
+  <path d="M825 465h26l16-39 27 80 30-115 29 151 27-76 19 38h25" fill="none" stroke="#a8c2d0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="72" y="790" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3">SELECTED WORK</text>
+  <text x="1128" y="790" fill="#a8c2d0" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" text-anchor="end">02 / 04</text>
+</svg>

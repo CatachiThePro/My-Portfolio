@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 857">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#292021"/><stop offset="1" stop-color="#11130f"/></linearGradient><linearGradient id="screen" x2="0" y2="1"><stop stop-color="#d79b9b" stop-opacity=".25"/><stop offset="1" stop-color="#d79b9b" stop-opacity=".025"/></linearGradient></defs>
+  <rect width="1200" height="857" fill="url(#bg)"/>
+  <text x="72" y="78" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="4">AVNEESH TRIPATHI</text>
+  <text x="1128" y="78" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" text-anchor="end">VIDEO EDITOR</text>
+  <path d="M72 116H1128" stroke="#fff" stroke-opacity=".2"/><path d="M72 117H238" stroke="#d79b9b" stroke-width="2"/>
+  <text x="72" y="250" fill="#d79b9b" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="4">03  /  SOCIAL CUTS</text>
+  <text x="68" y="385" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="600" letter-spacing="-5">SHORT</text>
+  <text x="68" y="482" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="600" letter-spacing="-5">FORM</text>
+  <path d="M72 525H395" stroke="#d79b9b" stroke-width="3"/>
+  <text x="72" y="570" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3">QUICK  /  CLEAR  /  MADE TO MOVE</text>
+  <rect x="832" y="218" width="226" height="430" rx="24" fill="#11130f" stroke="#d79b9b" stroke-opacity=".65" stroke-width="2" transform="rotate(7 945 433)"/>
+  <rect x="858" y="244" width="174" height="378" rx="12" fill="url(#screen)" stroke="#d79b9b" stroke-opacity=".28" transform="rotate(7 945 433)"/>
+  <path d="M925 360 925 479 1020 420Z" fill="#d79b9b" fill-opacity=".85"/>
+  <path d="M798 292h-48v48M1080 572h48v-48" fill="none" stroke="#d79b9b" stroke-width="3"/><circle cx="1087" cy="266" r="7" fill="#d79b9b"/>
+  <text x="72" y="790" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3">SELECTED WORK</text>
+  <text x="1128" y="790" fill="#d79b9b" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" text-anchor="end">03 / 04</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 857">
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#20221c"/><stop offset="1" stop-color="#11130f"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#d6fb6e" stop-opacity=".22"/><stop offset="1" stop-color="#d6fb6e" stop-opacity=".015"/></linearGradient></defs>
+  <rect width="1200" height="857" fill="url(#bg)"/>
+  <path d="M0 680 1200 410M0 740 1200 470M0 800 1200 530" stroke="#fff" stroke-opacity=".025"/>
+  <text x="72" y="78" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="4">AVNEESH TRIPATHI</text>
+  <text x="1128" y="78" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3" text-anchor="end">VIDEO EDITOR</text>
+  <path d="M72 116H1128" stroke="#fff" stroke-opacity=".2"/><path d="M72 117H238" stroke="#d6fb6e" stroke-width="2"/>
+  <text x="72" y="250" fill="#d6fb6e" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="4">01  /  PROPERTY FILMS</text>
+  <text x="68" y="385" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="600" letter-spacing="-5">REAL</text>
+  <text x="68" y="482" fill="#f2f0e9" font-family="Arial, Helvetica, sans-serif" font-size="98" font-weight="600" letter-spacing="-5">ESTATE</text>
+  <path d="M72 525H395" stroke="#d6fb6e" stroke-width="3"/>
+  <text x="72" y="570" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="3">SPACE  /  LIGHT  /  PLACE</text>
+  <circle cx="920" cy="280" r="106" fill="#d6fb6e" fill-opacity=".055"/>
+  <path d="M692 704V435L892 315 1092 435V704Z" fill="url(#glass)" stroke="#d6fb6e" stroke-opacity=".7" stroke-width="2"/>
+  <path d="M692 435 892 315 1092 435M786 704V491H998V704M892 315V704M692 550H1092" fill="none" stroke="#d6fb6e" stroke-opacity=".45" stroke-width="2"/>
+  <path d="M821 530H866V594H821ZM918 530H963V594H918ZM821 621H866V685H821ZM918 621H963V685H918Z" fill="#d6fb6e" fill-opacity=".22"/>
+  <text x="72" y="790" fill="#a4a69c" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3">SELECTED WORK</text>
+  <text x="1128" y="790" fill="#d6fb6e" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3" text-anchor="end">01 / 04</text>
+</svg>
